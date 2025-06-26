@@ -1,0 +1,6 @@
+Field Name,Data Type,Required,Format,Valid Values,Description
+Drug_ID,Integer,Yes,Positive Integer,1to100000,Unique identifier for each drug
+Drug_Name,String,Yes,Alphanumeric,Max 100 chars,Name of the drug
+Storage_Temp,Integer,No,Range -5 to 8,-5 to 8 (°C),Ideal storage temperature
+Expiry_Date,Date,Yes,YYYY-MM-DD,> today's date,Expiration date of the drug
+Batch_Code,String,Yes,Uppercase Letters & Digits,Regex: ^[A-Z0-9]{6}$,Unique code identifying production batch
