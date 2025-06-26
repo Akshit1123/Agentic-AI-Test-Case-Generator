@@ -52,18 +52,18 @@ Use Cases:
 Project Structure:
 
 agentictest/
-├── main.py # Entry script to run the full test case generation loop
+├── main.py 
 ├── graphs/
-│ └── main_graph.py # Defines the LangGraph workflow with all agent transitions
+│ └── main_graph.py 
 ├── agents/
-│ ├── test_lead_agent.py # Clarifies data dictionary entries
-│ ├── tester_agent.py # Generates test cases based on the field metadata
-│ └── senior_tester_agent.py # Reviews and scores the test cases
+│ ├── test_lead_agent.py 
+│ ├── tester_agent.py 
+│ └── senior_tester_agent.py 
 ├── data/
-│ └── data_dictionary.csv # Input CSV file containing field metadata
+│ └── data_dictionary.csv 
 ├── output/
-│ └── final_test_cases.json # Generated output of test cases and reviews
-└── graph_output.png # Mermaid visualization of the graph
+│ └── final_test_cases.json
+└── graph_output.png 
 
 
 
