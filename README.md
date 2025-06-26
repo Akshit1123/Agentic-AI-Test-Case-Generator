@@ -49,6 +49,22 @@ Use Cases:
  Auto-documentation for specs
  Prompt engineering test harness
 
+Project Structure:
+
+agentictest/
+├── main.py # Entry script to run the full test case generation loop
+├── graphs/
+│ └── main_graph.py # Defines the LangGraph workflow with all agent transitions
+├── agents/
+│ ├── test_lead_agent.py # Clarifies data dictionary entries
+│ ├── tester_agent.py # Generates test cases based on the field metadata
+│ └── senior_tester_agent.py # Reviews and scores the test cases
+├── data/
+│ └── data_dictionary.csv # Input CSV file containing field metadata
+├── output/
+│ └── final_test_cases.json # Generated output of test cases and reviews
+└── graph_output.png # Mermaid visualization of the graph
+
 
 
 Author
